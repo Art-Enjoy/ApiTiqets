@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tOQmQYdtX8X+zvHodhpvbBoMu12Vy5EreG4EgX+lUOM=",
+  "Source": "ApiTiqets",
+  "BasePath": "_content/ApiTiqets",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

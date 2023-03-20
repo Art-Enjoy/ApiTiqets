@@ -17,15 +17,15 @@ namespace Data
         {
             builder.Entity<Product>(entity =>
             {
-                entity.ToTable("Product");
+                entity.ToTable("Products");
             });
             builder.Entity<Order>(entity => {
-                entity.ToTable("Order");
+                entity.ToTable("Orders");
             });
             builder.Entity<User>(entity => {
                 entity.ToTable("Users");
             });
-            builder.Entity<UserRol>(entity => {
+             builder.Entity<UserRol>(entity => {
                 entity.ToTable("Rols");
             });
             foreach (var relationship in builder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))

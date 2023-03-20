@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "etfmqT52w4GM3JMoLsUtZ2m8Pse7ucf9s6UWe9iUnQE7+1D7UEJvJYKAr/3kb0zO+HolLZJbI0G1DinCIu2/sQ==",
+  "dgSpecHash": "yazp7txOA1JBZKN8Vdl+CN61E+fVZRKQnI6D8OQC06c28IKy56RzaneddCHCHliQJDwzgQwblMmt88SugEgOIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\source\\repos\\ApiTiqets\\WebApi\\ApiTiqets.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.0\\microsoft.entityframeworkcore.design.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.0\\microsoft.entityframeworkcore.relational.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.0\\microsoft.entityframeworkcore.sqlserver.7.0.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.0\\microsoft.entityframeworkcore.tools.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",

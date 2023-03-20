@@ -97,3 +97,5 @@ C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Microsoft.EntityFr
 C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Mono.TextTemplating.dll
 C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Resources.dll
+C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Resources.pdb

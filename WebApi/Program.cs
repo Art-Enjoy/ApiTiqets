@@ -24,6 +24,8 @@ builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IOrderLogic, OrderLogic>();
 builder.Services.AddScoped<IProductLogic, ProductLogic>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IRolService, RolService>();
+builder.Services.AddScoped<IRolLogic, RolLogic>();
 builder.Services.AddDbContext<ServiceContext>(
         options => options.UseSqlServer("name=ConnectionStrings:ServiceContext"));
 var app = builder.Build();

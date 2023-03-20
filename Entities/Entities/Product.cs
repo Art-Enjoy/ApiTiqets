@@ -14,7 +14,7 @@ namespace Entities.Entities
             IsPublic = true;
         }
         public int Id { get; set; }
-        public byte[] img { get; set; }
+      
         public string Title { get; set; }
         
         public string Location { get; set; }
@@ -23,5 +23,7 @@ namespace Entities.Entities
         public string Description { get; set; }
         public bool IsActive { get; set; }
         public bool IsPublic { get; private set; }
+
+        //public ICollection<Order> Orders { get; set; } = new List<Order>();
     }
 }

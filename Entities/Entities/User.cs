@@ -24,6 +24,9 @@ namespace Entities.Entities
 
         private string EncryptedPassword { get; set; }
 
+
+       // public ICollection<Order> Orders { get; set; } = new List<Order>();
+
     }
 }
 

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Entities.Entities
 {
     public class Product
@@ -23,5 +24,8 @@ namespace Entities.Entities
         public string Description { get; set; }
         public bool IsActive { get; set; }
         public bool IsPublic { get; private set; }
+
+       
     }
 }
+

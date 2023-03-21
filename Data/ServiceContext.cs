@@ -13,6 +13,7 @@ namespace Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserRol> Rols { get; set; }
+        public DbSet<FileItem> Files { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Product>(entity =>
@@ -27,6 +28,11 @@ namespace Data
             });
             builder.Entity<UserRol>(entity => {
                 entity.ToTable("Rols");
+            });
+
+            builder.Entity<FileItem>(user =>
+            {
+                user.ToTable("t_files");
             });
             foreach (var relationship in builder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
             {

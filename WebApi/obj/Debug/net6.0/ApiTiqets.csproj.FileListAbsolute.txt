@@ -99,3 +99,4 @@ C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Mono.TextTemplatin
 C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Resources.dll
 C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Resources.pdb
+C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\BCrypt.Net-Next.dll

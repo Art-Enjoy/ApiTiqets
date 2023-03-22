@@ -15,7 +15,6 @@ namespace Entities.Entities
             IsPublic = true;
         }
         public int Id { get; set; }
-        public byte[] img { get; set; }
         public string Title { get; set; }
         
         public string Location { get; set; }

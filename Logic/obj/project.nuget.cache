@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kSktqTa/DFEUOLmyTWkpIwcJROg2hEEQEXbD+dXDdH7Lc/vWa7sc3FEdDrrpphsiPp1X7YmpPL046fZ7wWJnFQ==",
+  "dgSpecHash": "wTDhTnYHTJVkrgGEI6cacqRQ09MotcNotdCxU2esIqLS2TizCBQ6Bd8zAjgGFr8mbR21jH3A7XUojd3KJPZW9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\source\\repos\\ApiTiqets\\Logic\\Logic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

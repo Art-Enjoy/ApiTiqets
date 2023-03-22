@@ -8,5 +8,7 @@ namespace ApiTiqets.IService
         
         void DeleteFile(int id);
         FileItem GetFileById(int id);
+        List<FileIdentifierModel> InsertFiles(List<FileItem> fileItemList);
+        List<FileItem> GetAllFiles();
     }
 }

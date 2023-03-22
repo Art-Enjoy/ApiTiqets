@@ -2,6 +2,7 @@
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;
+using System.IO.Compression;
 using System.Net.Mime;
 
 namespace ApiTiqets.Controllers
@@ -66,7 +67,39 @@ namespace ApiTiqets.Controllers
                 throw;
             }
         }
+        [HttpGet(Name = "GetAllFilesList")]
+           
+            public List<FileItem> GetAllFilesList()
+            {
+                return _fileService.GetAllFiles();
+            }
+            [HttpGet(Name = "GetAllFilesZip")]
+            public FileStreamResult GetAllFilesZip()
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    //required: using System.IO.Compression;
+                    using (var zip = new ZipArchive(ms, ZipArchiveMode.Create, true))
+                    {
+                        //QUery the Products table and get all image content
+                        _fileService.GetAllFiles().ForEach(file =>
+                        {
+                            var entry = zip.CreateEntry(file.Name);
+                            using (var fileStream = new MemoryStream(file.Content))
+                            using (var entryStream = entry.Open())
+                            {
+                                fileStream.CopyTo(entryStream);
+                            }
+                        });
+                    }
+                    return new FileStreamResult(ms, MediaTypeNames.Application.Zip)
+                    {
+                        FileDownloadName = "images.zip"
+                    };
+                }
     }
+        }
 }
+
 
 

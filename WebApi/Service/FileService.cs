@@ -24,7 +24,10 @@ namespace ApiTiqets.Service
                 throw;
             }
         }
-       
+        public List<FileIdentifierModel> InsertFiles(List<FileItem> fileItemList)
+        {
+            throw new NotImplementedException();
+        }
         public void DeleteFile(int id)
         {
             throw new NotImplementedException();
@@ -42,8 +45,11 @@ namespace ApiTiqets.Service
                 throw new Exception("No se encontró el archivo.");
             }
         }
+        public List<FileItem> GetAllFiles()
+        {
+            return _serviceContext.Set<FileItem>().ToList();
+        }
 
-        
     }
 }
 

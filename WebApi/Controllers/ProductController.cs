@@ -1,11 +1,12 @@
 ﻿using ApiTiqets.IService;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
+using System.Web.Http.Cors;
 
 namespace ApiTiqets.Controllers
 {
 
-    [ApiController]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [Route("[controller]")]
     public class ProductController : ControllerBase
     {

@@ -100,3 +100,9 @@ C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Resources.dll
 C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Resources.pdb
 C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\ADMIN\source\repos\ApiTiqets\WebApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

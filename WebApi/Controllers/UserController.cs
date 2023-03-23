@@ -1,4 +1,5 @@
 ﻿using ApiTiqets.IService;
+using ApiTiqets.Service;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Resources.RequestModels;
@@ -11,28 +12,43 @@ namespace ApiTiqets.Controllers
     [Route("[controller]/[action]")]
     public class UserController : ControllerBase
     {
+        private IUserSecurityService _userSecurityService;
         private ISecurityService _securityService;
         private IUserService _userService;
-        public UserController(ISecurityService securityService, IUserService userService)
+        
+
+        public UserController(ISecurityService securityService, IUserService userService, IUserSecurityService userSecurityService)
 
         {
-
+            _userSecurityService = userSecurityService;
             _securityService = securityService;
             _userService = userService;
         }
-        [HttpPost(Name = "InsertUser")]
-        public int Post([FromHeader] string userName, [FromHeader] string userPassword, [FromBody] NewUserRequest newUserRequest)
+
+        [HttpPost(Name = "LoginUser")]
+        public string Login([FromBody] LoginRequest loginRequest)
         {
-            var validCredentials = _securityService.ValidateUserCredentials(userName, userPassword, 1);
-            if (validCredentials == true)
-            {
-                return _userService.InsertUser(newUserRequest);
-            }
-            else
-            {
-                throw new InvalidCredentialException();
-            }
+
+            return _userSecurityService.GenerateAuthorizationToken(loginRequest.UserName, loginRequest.UserPassword);
         }
+        [HttpPost(Name = "InsertUser")]
+        public int InsertUser([FromBody] NewUserRequest newUserRequest)
+        {
+            return _userService.InsertUser(newUserRequest);
+        }
+        //[HttpPost(Name = "InsertUser")]
+        //public int Post([FromHeader] string userName, [FromHeader] string userPassword, [FromBody] NewUserRequest newUserRequest)
+        //{
+        //    var validCredentials = _securityService.ValidateUserCredentials(userName, userPassword, 1);
+        //    if (validCredentials == true)
+        //    {
+        //        return _userService.InsertUser(newUserRequest);
+        //    }
+        //    else
+        //    {
+        //        throw new InvalidCredentialException();
+        //    }
+        //}
 
         [HttpGet(Name = "GetAllUsers")]
         public List<User> GetAll([FromHeader] string userName, [FromHeader] string userPassword)

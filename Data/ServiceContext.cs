@@ -1,5 +1,6 @@
 ﻿using Data;
 using Entities.Entities;
+using Entities.Relations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
@@ -13,20 +14,39 @@ namespace Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserRol> Rols { get; set; }
+        public DbSet<FileItem> Files { get; set; }
+        public DbSet<AuthorizationItem> UserAuthorizations { get; set; }
+        public DbSet<RolAuthorization> RolsAuthorizations { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Product>(entity =>
             {
-                entity.ToTable("Product");
+                entity.ToTable("Products");
             });
             builder.Entity<Order>(entity => {
-                entity.ToTable("Order");
+                entity.ToTable("Orders");
             });
             builder.Entity<User>(entity => {
                 entity.ToTable("Users");
             });
             builder.Entity<UserRol>(entity => {
                 entity.ToTable("Rols");
+            });
+
+            builder.Entity<FileItem>(user =>
+            {
+                user.ToTable("t_files");
+            });
+            builder.Entity<AuthorizationItem>(user =>
+            {
+                user.ToTable("t_endpoint_authorizations");
+            });
+
+            builder.Entity<RolAuthorization>(user =>
+            {
+                user.ToTable("t_rols_authorizations");
+                user.HasOne<UserRol>().WithMany().HasForeignKey(a => a.IdRol);
+                user.HasOne<AuthorizationItem>().WithMany().HasForeignKey(a => a.IdAuthorization);
             });
             foreach (var relationship in builder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
             {

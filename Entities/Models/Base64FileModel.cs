@@ -1,17 +1,16 @@
 ﻿using ApiTiqets.Enums;
-using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Entities
+namespace Entities.Models
 {
-    public class FileUploadModel
+    public class Base64FileModel
     {
-        public IFormFile File { get; set; }
+        public string FileName { get; set; }
+        public string Content { get; set; }
         public FileExtensionEnum FileExtension { get; set; }
-        public NewProductForm NewProductForm { get; set; }
     }
 }

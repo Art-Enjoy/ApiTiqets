@@ -7,7 +7,7 @@ namespace ApiTiqets.Controllers
 {
 
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class ProductController : ControllerBase
     {
         private readonly ILogger<ProductController> _logger;

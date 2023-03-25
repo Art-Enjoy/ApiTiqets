@@ -27,10 +27,14 @@ namespace Data
                 entity.ToTable("Orders");
             });
             builder.Entity<User>(entity => {
-                entity.ToTable("Users");
+                entity.ToTable("Users")
+                .HasOne<UserRol>(o => o.UserRol)
+                .WithMany(p => p.Users)
+                .HasForeignKey(o => o.UserRolId);
             });
             builder.Entity<UserRol>(entity => {
-                entity.ToTable("Rols");
+                entity.ToTable("Rols")
+                .HasMany<User>(p => p.Users);
             });
 
             builder.Entity<FileItem>(user =>

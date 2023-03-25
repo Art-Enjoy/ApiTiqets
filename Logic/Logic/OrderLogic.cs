@@ -19,7 +19,7 @@ namespace Logic.Logic
             public void DeleteOrderById(int Id)
             {
                 var chooseOrder = _serviceContext.Set<Order>().Where(p => p.Id == Id).First();
-                chooseOrder.IsActive = false;
+                chooseOrder.IsDelivered = false;
                 _serviceContext.SaveChanges();
                 //var userToDelete = _serviceContext.Set<OrderItem>()
                 //.Where(u => u.Id == id).First();

@@ -24,7 +24,7 @@ namespace Resources.RequestModels
             var user = new User();
 
 
-            user.IdRol = IdRol;
+            user.UserRolId = IdRol;
             user.UserName = UserName;
             user.Password = Password;
             user.Email = Email;

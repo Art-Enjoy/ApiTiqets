@@ -38,7 +38,7 @@ namespace Logic.Logic
 
         public int InsertUser(User userItem)
         {
-            if (userItem.IdRol == 1)
+            if (userItem.UserRolId == 1)
             {
                 throw new InvalidOperationException();
             };

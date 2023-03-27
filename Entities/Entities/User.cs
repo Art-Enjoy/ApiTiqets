@@ -15,7 +15,8 @@ namespace Entities.Entities
         }
         public int Id { get; set; }
         public Guid IdWeb { get; set; }
-        public int UserRolId { get; set; }
+        public int IdRol { get; set; }
+        //public int UserRolId { get; set; }
         [JsonIgnore]
         public virtual UserRol UserRol { get; set; }
         public string UserName { get; set; }
@@ -23,7 +24,7 @@ namespace Entities.Entities
         public DateTime UpdateDate { get; set; }
         public string Email { get; set; }
         public bool IsActive { get; set; }
-        public int IdRol { get; set; }
+       
         public string Password { get; set; }
 
         public string EncryptedPassword { get; set; }

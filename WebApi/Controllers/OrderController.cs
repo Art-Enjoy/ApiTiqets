@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ApiTiqets.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class OrderController : ControllerBase
     {
         private readonly ILogger<ProductController> _logger;

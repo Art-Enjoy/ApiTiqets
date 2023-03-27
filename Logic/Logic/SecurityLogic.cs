@@ -21,7 +21,7 @@ namespace Logic.Logic
             var selectedUser = _serviceContext.Set<User>()
                                 .Where(u => u.UserName == userName
                                     && u.Password == userPassWord
-                                    && u.UserRolId == idRol).FirstOrDefault();
+                                    && u.IdRol == idRol).FirstOrDefault();
 
             if (selectedUser != null)
             {

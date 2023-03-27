@@ -78,7 +78,7 @@ namespace Logic.Logic
             }
 
             var userAuthorization = _serviceContext.Set<RolAuthorization>()
-                    .Where(a => a.IdRol == user.UserRolId
+                    .Where(a => a.IdRol == user.IdRol
                           && a.IdAuthorization == authorizedAction.Id
                           && a.IsActive == true)
                     .FirstOrDefault();

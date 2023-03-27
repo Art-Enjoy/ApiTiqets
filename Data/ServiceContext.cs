@@ -30,7 +30,7 @@ namespace Data
                 entity.ToTable("Users")
                 .HasOne<UserRol>(o => o.UserRol)
                 .WithMany(p => p.Users)
-                .HasForeignKey(o => o.UserRolId);
+                .HasForeignKey(o => o.IdRol);
             });
             builder.Entity<UserRol>(entity => {
                 entity.ToTable("Rols")

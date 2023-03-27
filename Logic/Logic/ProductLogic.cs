@@ -11,8 +11,7 @@ namespace Logic.Logic
 {
     public class ProductLogic : BaseContextLogic, IProductLogic
     {
-        public ProductLogic(ServiceContext serviceContext) : base(serviceContext) { }
-
+        public ProductLogic(ServiceContext serviceContext) : base(serviceContext) {  }
         public void DeleteProductById(int Id)
         {
             var chooseProduct = _serviceContext.Set<Product>().Where(p => p.Id == Id).First();

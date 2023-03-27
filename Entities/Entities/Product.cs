@@ -17,16 +17,20 @@ namespace Entities.Entities
         }
         public int Id { get; set; }
         public Guid IdWeb { get; set; }
+        public int OrderId { get; set; }
+        [JsonIgnore]
+
+        public virtual Order Order { get; set; }
         public string Title { get; set; }
         
         public string Location { get; set; }
-        public decimal RawPrice { get; set; }
+        public decimal Price { get; set; }
         [JsonIgnore]
         public decimal Units { get; set; }
         public string Description { get; set; }
         public bool IsActive { get; set; }
         public bool IsPublic { get; private set; }
-        public virtual ICollection<Order> Orders { get; set; }
+        
 
        
     }

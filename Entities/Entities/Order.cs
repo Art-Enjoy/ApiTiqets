@@ -11,11 +11,10 @@ namespace Entities.Entities
     {
         public int Id { get; set; }
         public Guid IdWeb { get; set; }
-        public int ProductId { get; set; }
-        [JsonIgnore]
+        
         public int UserId { get; set; }
         [JsonIgnore]
-        public virtual Product Product { get; set; }
+       
         public virtual User User { get; set; }
         public DateTime OrderDate { get; set; }
         public DateTime DeliveryDate { get; set; }
@@ -26,5 +25,6 @@ namespace Entities.Entities
         public int TotalPrice { get; set; }
         public bool IsPayed { get; set; }
         public bool IsDelivered { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

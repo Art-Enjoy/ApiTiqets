@@ -7,6 +7,7 @@ namespace ApiTiqets.Controllers
 {
 
     [EnableCors(origins: "*", headers: "*", methods: "*")]
+
     [Route("[controller]/[action]")]
     public class ProductController : ControllerBase
     {

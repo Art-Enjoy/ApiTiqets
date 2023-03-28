@@ -65,7 +65,7 @@ namespace ApiTiqets.Controllers
 
                 var fileId = _fileService.InsertFile(fileItem);
 
-                var productData = JsonConvert.DeserializeObject<ProductData>(newProductRequest.ProductDataString);
+                var productData = JsonConvert.DeserializeObject<Product>(newProductRequest.ProductDataString);
                 var productItem = productData.ToProductItem();
                 productItem.IdPhotoFile = fileId;
                 // var product = newProductRequest.Product.ToProductItem();
@@ -78,7 +78,8 @@ namespace ApiTiqets.Controllers
             }
 
         
-    }
+        }
+
         [HttpPost(Name = "PostBase64")]
         public int PostBase64([FromBody] NewProductBase64Request newProductBase64RequestModel)
         {
@@ -105,7 +106,7 @@ namespace ApiTiqets.Controllers
 
                 var fileId = _fileService.InsertFile(fileItem);
 
-                var productItem = newProductBase64RequestModel.ProductData.ToProductItem();
+                var productItem = newProductBase64RequestModel.Product.ToProductItem();
                 productItem.IdPhotoFile = fileId;
 
                 return _productService.InsertProduct(productItem);

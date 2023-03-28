@@ -31,9 +31,15 @@ namespace Entities.Entities
         public string Description { get; set; }
         public bool IsActive { get; set; }
         public bool IsPublic { get; private set; }
-        
 
-        
+        public Product ToProductItem()
+        {
+            Product productItem = new Product();
+            productItem.Title = Title;
+            productItem.Price = Price;
+            return productItem;
+        }
+
 
 
     }

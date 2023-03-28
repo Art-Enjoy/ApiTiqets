@@ -15,10 +15,11 @@ namespace ApiTiqets.Controllers
         private readonly IFileService _fileService;
         private readonly ILogger<ProductController> _logger;
         private readonly IProductService _productService;
-        public ProductController(ILogger<ProductController> logger, IProductService productService)
+        public ProductController(ILogger<ProductController> logger, IProductService productService, IFileService fileService)
         {
             _logger = logger;
             _productService = productService;
+            _fileService = fileService;
         }
         //[HttpPost(Name = "InsertProduct")]
         //public int Post([FromBody] Product product)

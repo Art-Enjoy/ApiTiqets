@@ -36,6 +36,11 @@ namespace Logic.Logic
             return _serviceContext.Set<Product>().ToList();
 
         }
+        public List<Product> GetAllProducts()
+        {
+            return _serviceContext.Set<Product>().ToList();
+
+        }
     }
 }
 

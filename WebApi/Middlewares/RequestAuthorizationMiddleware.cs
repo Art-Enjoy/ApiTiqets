@@ -14,7 +14,7 @@ namespace ApiTiqets.Middlewares
         {
             var controller = context.GetRouteData().Values["controller"].ToString();
             var action = context.GetRouteData().Values["action"].ToString();
-            if (!(controller == "User" && action == "Login"))
+            if (!(controller == "User" && (action == "Login" || action == "Register")))
             {
                 _userSecurityService.ValidateUserToken(context.Request.Headers.Authorization.ToString(),
                                                   controller,

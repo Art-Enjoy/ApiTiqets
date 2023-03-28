@@ -23,7 +23,10 @@ namespace ApiTiqets.Service
         {
             return _productLogic.GetProduct();
         }
-
+        public List<Product> GetAllProducts()
+        {
+            return _productLogic.GetAllProducts();
+        }
         public int InsertProduct(Product product)
         {
             _productLogic.InsertProduct(product);

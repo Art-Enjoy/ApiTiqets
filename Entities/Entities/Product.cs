@@ -33,13 +33,7 @@ namespace Entities.Entities
         public bool IsPublic { get; private set; }
         
 
-        public Product ToProductItem()
-        {
-            Product productItem = new Product();
-            productItem.Title = Title;
-            productItem.Price = Price;
-            return productItem;
-        }
+        
 
 
     }

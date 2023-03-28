@@ -1,4 +1,5 @@
 ﻿using Entities.Entities;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Entities.Models
 {
     public class NewProductRequestB
     {
-        public Product Product { get; set; }
-        public Base64FileModel Base64FileModel { get; set; }
+        public IFormFile File { get; set; }
+        public string ProductDataString { get; set; }
     }
 }

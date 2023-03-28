@@ -22,7 +22,8 @@ namespace Entities.Entities
 
         public virtual Order Order { get; set; }
         public string Title { get; set; }
-        
+        public int IdPhotoFile { get; set; }
+
         public string Location { get; set; }
         public decimal Price { get; set; }
         [JsonIgnore]
@@ -32,7 +33,15 @@ namespace Entities.Entities
         public bool IsPublic { get; private set; }
         
 
-       
+        public Product ToProductItem()
+        {
+            Product productItem = new Product();
+            productItem.Title = Title;
+            productItem.Price = Price;
+            return productItem;
+        }
+
+
     }
 }
 

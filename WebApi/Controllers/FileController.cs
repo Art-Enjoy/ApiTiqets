@@ -24,7 +24,7 @@ namespace ApiTiqets.Controllers
             {
                 var fileItem = new FileItem();
                 fileItem.Id = 0;
-                fileItem.Name = fileUploadModel.File.FileName;
+                fileItem.Title = fileUploadModel.File.FileName;
                 fileItem.InsertDate = DateTime.Now;
                 fileItem.UpdateDate = DateTime.Now;
                 fileItem.FileExtension = fileUploadModel.FileExtension;
@@ -59,7 +59,7 @@ namespace ApiTiqets.Controllers
 
                 return new FileStreamResult(stream, new MediaTypeHeaderValue(mimeType))
                 {
-                    FileDownloadName = fileItem.Name
+                    FileDownloadName = fileItem.Title
                 };
             }
             catch (Exception)
@@ -84,7 +84,7 @@ namespace ApiTiqets.Controllers
                         //QUery the Products table and get all image content
                         _fileService.GetAllFiles().ForEach(file =>
                         {
-                            var entry = zip.CreateEntry(file.Name);
+                            var entry = zip.CreateEntry(file.Title);
                             using (var fileStream = new MemoryStream(file.Content))
                             using (var entryStream = entry.Open())
                             {

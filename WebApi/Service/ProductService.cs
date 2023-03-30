@@ -6,7 +6,7 @@ namespace ApiTiqets.Service
 {
     public class ProductService : IProductService
     {
-        //private readonly IProductService _productService;
+        private readonly IProductService _productService;
         private readonly IProductLogic _productLogic;
         public ProductService(IProductLogic productLogic)
         {

@@ -21,7 +21,7 @@ namespace Entities.Entities
         public string Location { get; set; }
         public decimal Price { get; set; }
         public decimal Units { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
         public bool IsActive { get; set; }
         public bool IsPublic { get; private set; }
 

@@ -26,6 +26,12 @@ namespace Logic.Logic
             _serviceContext.SaveChanges();
         }
 
+        public List<Product> GetAllProducts()
+        {
+            return _serviceContext.Set<Product>().ToList();
+
+        }
+
         public void PatchProduct(Product product)
         {
             _serviceContext.Products.Update(product);

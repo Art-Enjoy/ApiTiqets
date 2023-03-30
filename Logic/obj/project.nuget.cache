@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wTDhTnYHTJVkrgGEI6cacqRQ09MotcNotdCxU2esIqLS2TizCBQ6Bd8zAjgGFr8mbR21jH3A7XUojd3KJPZW9Q==",
+  "dgSpecHash": "rdWES9Uso/8cdrLYwacT5ITkxNzmxREv1yP6vun8DyeT4aWqKgeHYXF6ZYuF4CJxpKVmwDifEFoj5mBf8dmDhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\source\\repos\\ApiTiqets\\Logic\\Logic.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\proyectos\\ApiTiqets\\Logic\\Logic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

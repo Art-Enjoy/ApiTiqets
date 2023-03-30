@@ -11,6 +11,7 @@ namespace Logic.Ilogic
     {
         void DeleteProductById(int Id);
         List<Product> GetProduct();
+        List<Product> GetAllProducts();
         void InsertProduct(Product product);
         void PatchProduct(Product product);
     }

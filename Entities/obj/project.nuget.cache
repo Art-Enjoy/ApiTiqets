@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "27qiN4OV9RrtbyWD/UnrJd0TM/hjWiD9Ez8W1kcFYr1E0dIZZdzgnTxrPivJw2EXAKAJIMFBZ0hNuo8sAcM9hw==",
+  "dgSpecHash": "yRW/4RG4Tzu8zSh/t9i0Y2JCzKpPdtZ2gN5RaoSoKn9MTP99NdcM8O5uapCPHayMTCIxpOR7sKtWmh8RrXg7Sg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\source\\repos\\ApiTiqets\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\proyectos\\ApiTiqets\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

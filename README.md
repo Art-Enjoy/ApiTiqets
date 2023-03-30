@@ -1,11 +1,6 @@
 # ART-ENJOY 🎨
 
 
-## Screenshots 🖥️
-### This is our BBDD:
-![DIAGRAMA](https://user-images.githubusercontent.com/124665913/228964900-61616d37-f76b-419f-83dd-63eed75e98d4.jpg)
-
-
 ## Technology stack used in Back-end ⚙️
 * **Microsoft Visual Studio** - [Sitio web oficial](https://visualstudio.microsoft.com/es/)
 * **C#** - [Sitio web oficial](https://learn.microsoft.com/es-es/dotnet/csharp/)
@@ -33,6 +28,11 @@ Methodology Agile with Scrum
 * Mob Programming
 * Pair Programming
 * Solo Programming
+
+
+## Screenshots 🖥️
+### This is our BBDD:
+![DIAGRAMA](https://user-images.githubusercontent.com/124665913/228964900-61616d37-f76b-419f-83dd-63eed75e98d4.jpg)
 
 
 ## Contributors 👩‍👩‍👧‍👧

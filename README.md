@@ -3,7 +3,7 @@
 
 ## Screenshots 🖥️
 ### This is our BBDD:
-![This is an image]()
+![DIAGRAMA](https://user-images.githubusercontent.com/124665913/228964900-61616d37-f76b-419f-83dd-63eed75e98d4.jpg)
 
 
 ## Technology stack used in Back-end ⚙️
@@ -25,14 +25,7 @@ In te project directory run:
 * To install the dependencies ***$ npm install***
 * To install react router ***$ npm install react-router-dom@6***
 * To install axios ***$ npm install axios***
-* 
-* TEST XXXX (To install test ***$ npm install --save-dev jest***
-***$ npm install --save-dev babel-jest @babel/core @babel/preset-env***
-***$ npm install --save-dev ts-jest***
-
 * To activate the server and keep this terminal open ***$ npm run dev***
-*  
-* XXXX MIGRACIONESSSS
 
 
 ## Methodologies 🧠
@@ -51,4 +44,5 @@ Methodology Agile with Scrum
 
 
 ## Next steps 👣
-XXXX
+* Unit Test
+* All the methods (CRUD) of the entities have functionality with the front-back connection

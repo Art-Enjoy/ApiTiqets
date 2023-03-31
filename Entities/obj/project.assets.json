@@ -3230,11 +3230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\ApiTiqets\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\proyectos\\ApiTiqets\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\ADMIN\\source\\repos\\ApiTiqets\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\proyectos\\ApiTiqets\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\source\\repos\\ApiTiqets\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\proyectos\\ApiTiqets\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
